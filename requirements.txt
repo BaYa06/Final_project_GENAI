@@ -1,6 +1,5 @@
-# TODO: зафиксировать версию scikit-learn такой же, как в Colab (она печатается в meta.json)
 pandas
 numpy
-scikit-learn
+scikit-learn==1.6.1
 joblib
 streamlit
