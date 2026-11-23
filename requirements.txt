@@ -1,0 +1,6 @@
+# TODO: зафиксировать версию scikit-learn такой же, как в Colab (она печатается в meta.json)
+pandas
+numpy
+scikit-learn
+joblib
+streamlit
