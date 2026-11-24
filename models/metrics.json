@@ -1,0 +1,25 @@
+{
+  "seed": 42,
+  "sklearn_version": "1.6.1",
+  "data": {
+    "rows_clean": 16073,
+    "price_cap_try": 39365.8739999998,
+    "n_train": 12858,
+    "n_test": 3215
+  },
+  "ml": {
+    "mae_baseline_district_median": 2593.9921228615867,
+    "mae_ridge": 1956.2998984602484,
+    "mae_gb_with_property_type": 1412.2673654345404,
+    "mae_gb_final_true_room_type": 1444.1680968424641,
+    "mae_gb_final_nlp_room_type": 1454.2105525911288,
+    "range_q10": 0.6879556755028288,
+    "range_q90": 1.4851514460877826,
+    "range_coverage_test_true": 0.8130637636080871,
+    "range_coverage_test_nlp": 0.8093312597200623
+  },
+  "nlp": {
+    "variant": "B: 3 класса, с весами",
+    "threshold": 0.7
+  }
+}
