@@ -140,3 +140,16 @@ def test_classify_masks_contacts():
 def test_load_artifacts_missing_files(tmp_path):
     with pytest.raises(FileNotFoundError):
         pl.load_artifacts(tmp_path)
+
+
+def test_explain_price_sorted_and_skips_invalid():
+    art = make_price_art()
+    rows = pl.explain_price({**GOOD, "accommodates": 16}, "Entire home/apt", art)
+    assert all(r["label"] != "+1 гость" for r in rows)  # 17 гостей вне допустимых границ
+    deltas = [abs(r["delta"]) for r in rows]
+    assert deltas == sorted(deltas, reverse=True) and rows
+
+
+def test_explain_price_rejects_bad_input():
+    with pytest.raises(ValueError):
+        pl.explain_price({**GOOD, "accommodates": -5}, None, make_price_art())

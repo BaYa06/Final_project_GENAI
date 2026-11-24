@@ -175,3 +175,30 @@ def predict_price(inp: dict, room_type: str | None, price_art: dict) -> dict:
     return {"price": price, "low": price * price_art["range_q10"],
             "high": price * price_art["range_q90"], "baseline": base,
             "room_type_used": room_type}
+
+
+def explain_price(inp: dict, room_type: str | None, price_art: dict) -> list[dict]:
+    """Что-если: как меняется оценка цены, если изменить один параметр жилья.
+
+    Это чувствительность модели при прочих равных, а не причинное объяснение рынка.
+    Параметры, выходящие за допустимые границы, пропускаются.
+    """
+    base = predict_price(inp, room_type, price_art)["price"]
+    changes = [
+        ("+1 гость", {"accommodates": float(inp["accommodates"]) + 1}),
+        ("+1 спальня", {"bedrooms": float(inp["bedrooms"]) + 1}),
+        ("+1 ванная", {"baths": float(inp["baths"]) + 1}),
+        ("+10 удобств в объявлении", {"n_amenities": float(inp.get("n_amenities") or 0) + 10}),
+        ("Хозяин — суперхост" if not inp.get("superhost") else "Хозяин — не суперхост",
+         {"superhost": not inp.get("superhost")}),
+        ("Общая ванная" if not inp.get("shared_bath") else "Отдельная ванная",
+         {"shared_bath": not inp.get("shared_bath")}),
+    ]
+    out = []
+    for label, patch in changes:
+        try:
+            price = predict_price({**inp, **patch}, room_type, price_art)["price"]
+        except ValueError:
+            continue
+        out.append({"label": label, "delta": price - base, "price": price})
+    return sorted(out, key=lambda r: -abs(r["delta"]))

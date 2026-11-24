@@ -9,3 +9,4 @@ __pycache__/
 *.parquet
 data/*
 !data/.gitkeep
+!docs/*.csv

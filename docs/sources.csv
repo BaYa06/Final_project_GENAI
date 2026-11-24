@@ -1,0 +1,19 @@
+file,topic,title,source_name,source_url,date_checked
+01_visa_evisa.md,visa,Как оформить турецкую e-Visa,Министерство иностранных дел Турции,https://www.mfa.gov.tr/visa-information-for-foreigners.en.mfa/default.en.mfa,2026-11-24
+02_visa_stay_rules.md,visa,Безвизовый въезд для Кыргызстана и соседних стран,Министерство иностранных дел Турции,https://www.mfa.gov.tr/yabancilarin-tabi-oldugu-vize-rejimi.tr.mfa,2026-11-24
+03_visa_border_checks.md,visa,Документы и проверка при въезде в Турцию,Великое национальное собрание Турции — закон № 6458,https://www5.tbmm.gov.tr/tutanaklar/KANUNLAR_KARARLAR/kanuntbmmc097/kanuntbmmc097/kanuntbmmc09706458.pdf,2026-11-24
+04_airport_ist_metro.md,airport,Из İstanbul Havalimanı на метро до Gayrettepe и Taksim,Министерство транспорта и инфраструктуры Турции,https://www.uab.gov.tr/haberler/gayrettepe-istanbul-havalimani-30-dakika?PageSpeed=noscript,2026-11-24
+05_airport_havaist.md,airport,Из İstanbul Havalimanı на автобусах Havaist,Havaist,https://web.hava.ist/duraklar.php,2026-11-24
+06_airport_saw_to_city.md,airport,Из Sabiha Gökçen в Kadıköy и на европейскую сторону,Министерство транспорта и инфраструктуры Турции,https://sgb.uab.gov.tr/haberler/ulastirma-ve-altyapi-bakani-karaismailoglu-pendik-sabiha-gokcen-metro-hattini-kullandi,2026-11-24
+07_transport_buy_top_up.md,transport,Где купить и пополнить İstanbulkart,BELBİM и İstanbulkart,https://belbim.istanbul/processingPoints?page=ticket-machine,2026-11-24
+08_transport_metro_fares.md,transport,Сколько стоит метро и чем отличаются билеты,Metro İstanbul,https://www.metro.istanbul/SeferDurumlari/BiletUcretleri,2026-11-24
+09_transport_bus_metrobus.md,transport,Как пользоваться Metrobüs и где пересесть на другой транспорт,İETT,https://www.iett.istanbul/icerik/metrobus-hatlari,2026-11-24
+10_rental_permit.md,rental,Когда хозяину нужно разрешение на краткосрочную аренду,Resmî Gazete — закон Турции № 7464,https://www.resmigazete.gov.tr/eskiler/2023/11/20231102-16.htm,2026-11-24
+11_rental_host_and_guest.md,rental,Что должно быть в объявлении и в съёмном жилье,Resmî Gazete — регламент Министерства культуры и туризма Турции,https://resmigazete.gov.tr/eskiler/2023/12/20231228-1.htm,2026-11-24
+12_rental_guest_registration.md,rental,Кто отвечает за регистрацию гостей в краткосрочной аренде,Resmî Gazete — закон Турции № 7464,https://www.resmigazete.gov.tr/eskiler/2023/11/20231102-16.htm,2026-11-24
+13_safety_emergency_112.md,safety,Куда звонить в экстренной ситуации,МВД Турции — Emergency Guide 112,https://www.112.gov.tr/kurumlar/112.gov.tr/IcSite/kocaeli/I%CC%87NGI%CC%87LI%CC%87ZCE_112-KILAVUZ_BASKI.pdf,2026-11-24
+14_safety_lost_passport.md,safety,Что делать гражданину Кыргызстана при потере паспорта,Центр трудоустройства граждан за рубежом при Минтруда Кыргызской Республики,https://migrant.kg/ru/services/faq/,2026-11-24
+15_safety_city_precautions.md,safety,Как снизить риск кражи и других неприятностей в Стамбуле,Министерство иностранных дел Великобритании — GOV.UK,https://www.gov.uk/foreign-travel-advice/turkey/safety-and-security,2026-11-24
+16_taxes_accommodation.md,taxes,Налог на размещение в отелях и других местах проживания,Gelir İdaresi Başkanlığı — налоговая служба Турции,https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2F2026_Konaklama_Vergisi_Rehberi.pdf,2026-11-24
+17_taxes_tax_free.md,taxes,Tax Free при выезде из Турции,Gelir İdaresi Başkanlığı — общий регламент по НДС,https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=MEVZUAT_TEBLIGLER%2FUNIVERSAL%2F2026%2Fkdv_genteb.pdf,2026-11-24
+18_taxes_customs_allowances.md,taxes,"Лимиты и пошлины на вещи, которые турист ввозит в Турцию",Министерство торговли Турции,https://ticaret.gov.tr/gumruk-islemleri/sikca-sorulan-sorular/bireysel/yolcu-muafiyetleri,2026-11-24

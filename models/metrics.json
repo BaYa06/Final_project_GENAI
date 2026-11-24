@@ -16,7 +16,14 @@
     "range_q10": 0.6879556755028288,
     "range_q90": 1.4851514460877826,
     "range_coverage_test_true": 0.8130637636080871,
-    "range_coverage_test_nlp": 0.8093312597200623
+    "range_coverage_test_nlp": 0.8093312597200623,
+    "cv_5fold_train": {
+      "model_mae_mean": 1478,
+      "model_mae_std": 26,
+      "baseline_mae_mean": 2585,
+      "baseline_mae_std": 45,
+      "note": "5 фолдов на обучающей выборке (12 858), seed 42; ячейка 13 ноутбука"
+    }
   },
   "nlp": {
     "variant": "B: 3 класса, с весами",
