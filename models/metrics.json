@@ -20,6 +20,36 @@
   },
   "nlp": {
     "variant": "B: 3 класса, с весами",
-    "threshold": 0.7
+    "threshold": 0.7,
+    "n_test": 3215,
+    "no_threshold": {
+      "f1_by_class": {
+        "Entire home/apt": 0.946,
+        "Hotel room": 0.9,
+        "Private/Shared room": 0.851
+      },
+      "support_by_class": {
+        "Entire home/apt": 2332,
+        "Hotel room": 41,
+        "Private/Shared room": 842
+      },
+      "accuracy": 0.92,
+      "macro_f1": 0.899
+    },
+    "with_threshold": {
+      "f1_by_class": {
+        "Entire home/apt": 0.972,
+        "Hotel room": 0.923,
+        "Private/Shared room": 0.92
+      },
+      "support_by_class": {
+        "Entire home/apt": 2036,
+        "Hotel room": 40,
+        "Private/Shared room": 714
+      },
+      "accuracy": 0.958,
+      "macro_f1": 0.938,
+      "answered_share": 0.868
+    }
   }
 }
